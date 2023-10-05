@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app2.css">
+
+</head>
+
+
+<body>
+
+    <div id="reloj" class="reloj">
+        <p id="tiempo">00:00</p>
+
+        <div class="menu">
+            <button id="play" class="option-buton" onclick="chronometerPlay()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+                    <path d="M7 6v12l10-6z"></path>
+                </svg>
+                play</button>
+            <button id="pause" class="option-buton" onclick="chronometerPause()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+                    <path d="M8 7h3v10H8zm5 0h3v10h-3z"></path>
+                </svg>
+                pause</button>
+            <button id="stop" class="option-buton" onclick="chronometerStop()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+                    <path d="M7 7h10v10H7z"></path>
+                </svg>stop</button>
+            <!-- <button>finish</button> -->
+        </div>
+        <div id="lista" class="lista">
+            <table id="table-list">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Timer</th>
+                        <th>createAt</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="menu-alert" style="position: absolute; right: 0; height: 100vh;z-index: 9999;">
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
